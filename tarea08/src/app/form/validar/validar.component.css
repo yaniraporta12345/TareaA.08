@@ -1,0 +1,11 @@
+.ht{
+  text-align: center;
+  padding: 10px;
+}
+
+.border{
+  color: rgb(255, 255, 255);
+  background-color:#8f0808;
+  border:none;
+  border-radius: 5px;
+}

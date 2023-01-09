@@ -1,0 +1,27 @@
+
+<h1 class="text-center">FORMULARIO</h1>
+<form class="container">
+  <section class="row g-3">
+    <section class="col">
+      <label>Nombre</label>
+      <input type="text" class="form-control border" >
+    </section>
+    <section class="col">
+      <label>Apellido</label>
+      <input type="text" class="form-control border" >
+    </section>
+    <section class="col">
+      <label>Edad</label>
+      <input type="text" class="form-control border" #numberEdad>
+    </section>
+  </section>
+  <section class="d-grid col-2 mx-auto">
+    <input type="button" value="Enviar" class="btn btn-danger center" (click)="validarEdad(numberEdad.value)" >
+  </section>
+</form>
+<p class="ht" *ngIf="resultado==false else verdad ">
+  {{mensaje}}
+</p>
+<ng-template #verdad>
+  <p class="ht">{{mensaje}}</p>
+</ng-template>
